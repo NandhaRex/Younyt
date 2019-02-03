@@ -1,4 +1,4 @@
-﻿// WARNING
+// WARNING
 //
 // This file has been generated automatically by Visual Studio from the outlets and
 // actions declared in your storyboard file.
@@ -7,11 +7,12 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
+using UIKit;
 
 namespace Younyt
 {
-    [Register ("SecondViewController")]
-    partial class SecondViewController
+    [Register ("ProfileViewController")]
+    partial class ProfileViewController
     {
         void ReleaseDesignerOutlets ()
         {

@@ -61,7 +61,23 @@
     <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AboutUsViewController.cs" />
+    <Compile Include="AboutUsViewController.designer.cs">
+      <DependentUpon>AboutUsViewController.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomClass\CustomControls.cs" />
+    <Compile Include="HomeViewController.cs" />
+    <Compile Include="HomeViewController.designer.cs">
+      <DependentUpon>HomeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileViewController.cs" />
+    <Compile Include="ProfileViewController.designer.cs">
+      <DependentUpon>ProfileViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecommendationViewController.cs" />
+    <Compile Include="RecommendationViewController.designer.cs">
+      <DependentUpon>RecommendationViewController.cs</DependentUpon>
+    </Compile>
     <Compile Include="View Controller\EditProfileController.cs" />
     <Compile Include="View Controller\EditProfileController.designer.cs">
       <DependentUpon>EditProfileController.cs</DependentUpon>
@@ -81,14 +97,6 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="View Controller\FirstViewController.cs" />
-    <Compile Include="View Controller\FirstViewController.designer.cs">
-      <DependentUpon>FirstViewController.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View Controller\SecondViewController.cs" />
-    <Compile Include="View Controller\SecondViewController.designer.cs">
-      <DependentUpon>SecondViewController.cs</DependentUpon>
-    </Compile>
     <InterfaceDefinition Include="Main.storyboard" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
       <Visible>false</Visible>
