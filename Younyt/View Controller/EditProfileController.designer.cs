@@ -14,16 +14,8 @@ namespace Younyt
     [Register ("EditProfileController")]
     partial class EditProfileController
     {
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIView ProfileBackground { get; set; }
-
         void ReleaseDesignerOutlets ()
         {
-            if (ProfileBackground != null) {
-                ProfileBackground.Dispose ();
-                ProfileBackground = null;
-            }
         }
     }
 }

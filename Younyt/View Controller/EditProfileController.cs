@@ -14,8 +14,8 @@ namespace Younyt
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            var gradientLayer = CustomControls.ButtonBackground(ProfileBackground);
-            ProfileBackground.Layer.InsertSublayer(gradientLayer,0);
+            //var gradientLayer = CustomControls.ButtonBackground(ProfileBackground);
+           // ProfileBackground.Layer.InsertSublayer(gradientLayer,0);
         }
     }
 }
