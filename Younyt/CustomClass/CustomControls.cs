@@ -19,7 +19,7 @@ namespace Younyt.Custom_Class
             gradientLayer.StartPoint = new CGPoint(x: 0, y: 0.5);
             gradientLayer.EndPoint = new CGPoint(x: 1, y: 0.5);
             gradientLayer.CornerRadius = uIView.Layer.CornerRadius;
-            gradientLayer.Frame = uIView.Bounds;
+            gradientLayer.Frame = new CGRect(0, 0, uIView.Frame.Size.Width, uIView.Frame.Size.Height);
             gradientLayer.MasksToBounds = true;
             return gradientLayer;
         }

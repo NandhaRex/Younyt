@@ -14,8 +14,16 @@ namespace Younyt
     [Register ("ProfileViewController")]
     partial class ProfileViewController
     {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton EditProfileButton { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
+            if (EditProfileButton != null) {
+                EditProfileButton.Dispose ();
+                EditProfileButton = null;
+            }
         }
     }
 }

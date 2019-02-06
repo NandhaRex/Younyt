@@ -61,21 +61,21 @@
     <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="AboutUsViewController.cs" />
-    <Compile Include="AboutUsViewController.designer.cs">
+    <Compile Include="View Controller\AboutUsViewController.cs" />
+    <Compile Include="View Controller\AboutUsViewController.designer.cs">
       <DependentUpon>AboutUsViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomClass\CustomControls.cs" />
-    <Compile Include="HomeViewController.cs" />
-    <Compile Include="HomeViewController.designer.cs">
+    <Compile Include="View Controller\HomeViewController.cs" />
+    <Compile Include="View Controller\HomeViewController.designer.cs">
       <DependentUpon>HomeViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProfileViewController.cs" />
-    <Compile Include="ProfileViewController.designer.cs">
+    <Compile Include="View Controller\ProfileViewController.cs" />
+    <Compile Include="View Controller\ProfileViewController.designer.cs">
       <DependentUpon>ProfileViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="RecommendationViewController.cs" />
-    <Compile Include="RecommendationViewController.designer.cs">
+    <Compile Include="View Controller\RecommendationViewController.cs" />
+    <Compile Include="View Controller\RecommendationViewController.designer.cs">
       <DependentUpon>RecommendationViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="View Controller\EditProfileController.cs" />
@@ -94,11 +94,11 @@
     <Compile Include="AppDelegate.cs" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <InterfaceDefinition Include="Main.storyboard" />
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
     <InterfaceDefinition Include="Resources\MenuTableViewCell.xib" />
   </ItemGroup>
   <ItemGroup>
-    <InterfaceDefinition Include="Main.storyboard" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
