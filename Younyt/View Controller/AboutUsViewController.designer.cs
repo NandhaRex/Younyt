@@ -14,8 +14,25 @@ namespace Younyt
     [Register ("AboutUsViewController")]
     partial class AboutUsViewController
     {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel aboutLabel { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        Younyt.CustomLabel gradientView { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
+            if (aboutLabel != null) {
+                aboutLabel.Dispose ();
+                aboutLabel = null;
+            }
+
+            if (gradientView != null) {
+                gradientView.Dispose ();
+                gradientView = null;
+            }
         }
     }
 }

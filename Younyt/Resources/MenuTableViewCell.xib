@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
@@ -11,11 +11,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuTableViewCell" rowHeight="109" id="KGk-i7-Jjw" customClass="MenuTableViewCell" customModule="Project" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuTableViewCell" rowHeight="109" id="KGk-i7-Jjw" customClass="tableViewCell" customModule="Project" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="108.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="108"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="younty.png" translatesAutoresizingMaskIntoConstraints="NO" id="3xa-wJ-j2M">
@@ -62,11 +62,12 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="titleLabel" destination="MiL-Jg-0av" id="ejG-6B-aAC"/>
+                <outlet property="profileImage" destination="3xa-wJ-j2M" id="name-outlet-3xa-wJ-j2M"/>
             </connections>
             <point key="canvasLocation" x="436.80000000000001" y="189.3553223388306"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="younty.png" width="16" height="16"/>
+        <image name="younty.png" width="232" height="259"/>
     </resources>
 </document>

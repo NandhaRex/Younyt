@@ -11,19 +11,11 @@ using UIKit;
 
 namespace Younyt
 {
-    [Register ("HomeTabController")]
-    partial class HomeTabController
+    [Register ("CustomLabel")]
+    partial class CustomLabel
     {
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITabBar tabbar { get; set; }
-
         void ReleaseDesignerOutlets ()
         {
-            if (tabbar != null) {
-                tabbar.Dispose ();
-                tabbar = null;
-            }
         }
     }
 }

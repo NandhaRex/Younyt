@@ -16,7 +16,7 @@ namespace Younyt
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton LogInButton { get; set; }
+        Younyt.LogInButtonGradient LogInButton { get; set; }
 
         void ReleaseDesignerOutlets ()
         {

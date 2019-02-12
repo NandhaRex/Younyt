@@ -24,6 +24,7 @@
     <MtouchArch>x86_64</MtouchArch>
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer: praveen@cruzbytes.com (GXC8VYD7X3)</CodesignKey>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -34,6 +35,11 @@
     <MtouchLink>None</MtouchLink>
     <MtouchArch>x86_64</MtouchArch>
     <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer: praveen@cruzbytes.com (GXC8VYD7X3)</CodesignKey>
+    <CodesignProvision />
+    <CodesignExtraArgs />
+    <CodesignResourceRules />
+    <CodesignEntitlements />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,8 +52,9 @@
     <ConsolePause>false</ConsolePause>
     <MtouchArch>ARM64</MtouchArch>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Developer: Praveen  Kumar (26L9837D2W)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
+    <CodesignProvision>Younyt</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -55,12 +62,43 @@
     <OutputPath>bin\iPhone\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignEntitlements>
+    </CodesignEntitlements>
     <MtouchArch>ARM64</MtouchArch>
     <ConsolePause>false</ConsolePause>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Developer: Praveen  Kumar (26L9837D2W)</CodesignKey>
+    <BuildIpa>true</BuildIpa>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignProvision>Younyt</CodesignProvision>
+    <CodesignExtraArgs />
+    <CodesignResourceRules />
+    <IpaIncludeArtwork>true</IpaIncludeArtwork>
+    <IOSDebugOverWiFi>false</IOSDebugOverWiFi>
+    <MtouchProfiling>false</MtouchProfiling>
+    <IpaPackageName>Younyt</IpaPackageName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <AppExtensionDebugBundleId />
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="CustomHomeTabCell.cs" />
+    <Compile Include="CustomHomeTabCell.designer.cs">
+      <DependentUpon>CustomHomeTabCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomLabel.cs" />
+    <Compile Include="CustomLabel.designer.cs">
+      <DependentUpon>CustomLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogInButtonGradient.cs" />
+    <Compile Include="LogInButtonGradient.designer.cs">
+      <DependentUpon>LogInButtonGradient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AvatarDetails.cs" />
+    <Compile Include="TableCellCustomImageView.cs" />
+    <Compile Include="TableCellCustomImageView.designer.cs">
+      <DependentUpon>TableCellCustomImageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableSource.cs" />
     <Compile Include="View Controller\AboutUsViewController.cs" />
     <Compile Include="View Controller\AboutUsViewController.designer.cs">
       <DependentUpon>AboutUsViewController.cs</DependentUpon>
@@ -106,6 +144,9 @@
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\First.imageset\First.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImages.launchimage\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\Second.imageset\Contents.json">
@@ -161,8 +202,25 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
+    <BundleResource Include="camera%403x.png" />
+    <BundleResource Include="camera%402x.png" />
+    <BundleResource Include="camera.png" />
     <Content Include="Entitlements.plist" />
     <BundleResource Include="younty.png" />
+    <BundleResource Include="power.png" />
+    <BundleResource Include="rating.png" />
+    <BundleResource Include="rec.png" />
+    <BundleResource Include="home.png" />
+    <BundleResource Include="user.png" />
+    <BundleResource Include="user%402x.png" />
+    <BundleResource Include="user%403x.png" />
+    <BundleResource Include="rating%403x.png" />
+    <BundleResource Include="rec%402x.png" />
+    <BundleResource Include="home%402x.png" />
+    <BundleResource Include="home%403x.png" />
+    <BundleResource Include="rec%403x.png" />
+    <BundleResource Include="rating%402x.png" />
+    <Content Include="younyt_cropped.gif" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

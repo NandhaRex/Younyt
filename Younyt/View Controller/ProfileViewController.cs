@@ -13,8 +13,9 @@ namespace Younyt
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            var gradientLayer = CustomControls.ButtonBackground(EditProfileButton);
-            EditProfileButton.Layer.InsertSublayer(gradientLayer, 0);
+            var gradient = CustomControls.ButtonBackground(profileLabelView);
+            profileLabelView.Layer.InsertSublayer(gradient, 0);
+            profileLabel.Text = "Profile";
         }
     }
 }
