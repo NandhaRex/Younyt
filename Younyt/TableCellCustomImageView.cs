@@ -25,14 +25,17 @@ namespace Younyt
             //Layer.MaskedCorners = (CACornerMask)7;
 
             ////left side
-            //var path = UIBezierPath.FromRoundedRect(Bounds, UIRectCorner.TopLeft, new CGSize(30, 30));
+            var pathRight = UIBezierPath.FromRoundedRect(Bounds, UIRectCorner.BottomRight, new CGSize(30, 30));
 
 
             //right side
-            //ClipsToBounds = true;
-            //Layer.CornerRadius = 10;
-            //Layer.MaskedCorners = CACornerMask.MaxXMinYCorner | CACornerMask.MinXMaxYCorner;
+            ClipsToBounds = true;
+            Layer.CornerRadius = 5;
+            Layer.MaskedCorners = CACornerMask.MaxXMinYCorner | CACornerMask.MinXMaxYCorner | CACornerMask.MaxXMaxYCorner;
 
+            var mask1 = new CAShapeLayer();
+            mask1.Path = pathRight.CGPath;
+            Layer.Mask = mask1;
             // the offset here is 40 you can play with it to increase / decrease the curve height
 
             var path = UIBezierPath.FromArc(new CGPoint(Frame.Size.Width - 5, Frame.Size.Height - 5), Frame.Size.Height / 1.5f,
